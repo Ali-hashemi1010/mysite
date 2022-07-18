@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse , JsonResponse
 def index_view(request):
-    return HttpResponse('<h1>hello home</h1>')
+    return render(request , 'website/index.html')
 
 def contact_view(request):
     return HttpResponse('<h1>hello contact</h1>')
